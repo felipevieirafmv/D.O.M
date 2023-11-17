@@ -1,0 +1,35 @@
+<mat-card>
+
+    <mat-card-header>
+        <mat-card-title>
+            Title
+        </mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Usuário</mat-label>
+                <input matInput placeholder="Meu Usuário"
+                    [(ngModel)]="username"/>
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>Usuário</mat-label>
+                <input matInput placeholder="Password"
+                    [(ngModel)]="password"/>
+            </mat-form-field>
+        </p>
+
+        <div>
+            <button mat-flat-button>
+                Logar
+            </button>
+            <button mat-flat-button>
+                Criar nova conta
+            </button>
+        </div>
+    </mat-card-content>
+</mat-card>
